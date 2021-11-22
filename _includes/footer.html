@@ -1,16 +1,16 @@
 <footer class="footer-main">
-    {{ site.name }} © {{ site.time | date: '%Y' }}
+    <p class="extra">
+        Made with
+        <a class="link" href="https://www.youtube.com/watch?v=ewxmv2tyeRs&ab_channel=whitneyhoustonVEVO">🤍</a>
+        by
+        <a class="link" href="https://github.com/danielchen-pyc">{{ site.nickname }}</a>
+    </p>
 
-    <a class="link" href="{{ site.url }}" target="_blank">
+    {{ site.time | date: '%m. %Y' }}
+
+    <!-- <a class="link" href="{{ site.url }}" target="_blank">
         <svg class="icon icon-rss">
             <use xlink:href="#icon-rss"></use>
         </svg>
-    </a>
-
-    <p class="extra">
-        Made with
-        <a class="link" href="https://www.youtube.com/watch?v=ewxmv2tyeRs&ab_channel=whitneyhoustonVEVO">❤️</a>
-        by
-        <a class="link" href="https://github.com/danielchen-pyc">dandandives</a>
-    </p>
+    </a> -->
 </footer>

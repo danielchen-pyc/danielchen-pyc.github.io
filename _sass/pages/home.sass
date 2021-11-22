@@ -1,0 +1,200 @@
+.home
+    > .experience-list > .item
+        p
+            margin-top: 0
+            margin-bottom: 0
+            text-align: center
+            font-family: $fontQuickSand
+            font-size: 20px
+            transition: all ease-in-out .3s
+
+    .section-title
+        text-align: center
+        font-family: $fontMonospace
+        font-weight: 540
+        opacity: 0.8
+        letter-spacing: 1.5px
+        margin-bottom: 50px
+
+        > a
+            color: $light-gray
+            text-decoration: none
+            transition: all ease-in-out .3s
+
+        > a:hover
+            color: $white
+    
+    .company-logo
+        margin-top: 0
+        margin-bottom: 0
+        display: block
+        margin-left: auto
+        margin-right: auto
+        width: 45%
+        saturate: 0.2
+        transition: all ease-in-out .3s
+
+    .work-date
+        margin-top: 0
+        font-family: $fontQuickSand
+        text-align: center
+        margin-bottom: 5px
+
+    .work-duration
+        margin-top: 0
+        font-family: $fontQuickSand
+        text-align: center
+        opacity: 70%
+        color: $wall-white
+        margin-bottom: 5px
+
+    .work-date-horizontal
+        margin-bottom: 0
+        
+        > .item1
+            display: inline-block
+            width: auto
+            padding-left: 22%
+            letter-spacing: 1.3px
+
+        > .item2
+            display: inline-block
+            width: auto
+            padding-right: 22%
+
+        > .space
+            display: inline-block
+            width: 2%
+
+    .post-tags
+        color: $light-gray
+        font-weight: 200
+        font-size: 1.4rem
+        text-transform: uppercase
+        font-weight: 500
+        text-align: center
+        display: block
+        margin-top: 0
+        margin-bottom: 6rem
+        letter-spacing: 1px
+        -webkit-font-smoothing: antialiased
+        text-rendering: optimizeLegibility
+
+        > .item
+            padding: 2px 6px
+            border-radius: 3px
+            font-size: 1.1rem
+            background: $gray
+            color: $black
+            letter-spacing: 1px
+            margin: 3px 1px
+            text-decoration: none
+            display: inline-block
+            transition: all ease-in-out .2s
+
+        > .item:hover
+            color: $rice-white
+
+
+.home
+    margin-top: 125px
+
+.home > .experience-list
+
+    margin-top: 50px
+    margin-bottom: 50px
+
+    > .item
+        display: block
+        width: 95%
+        margin: 2rem auto
+
+    > .item > .url
+        width: 100%
+        display: block
+        padding: 8px 0
+        text-decoration: none
+            
+
+    > .item:hover > .url
+        .company-logo
+            filter: saturate(105%)
+        p
+            color: $light-blue
+
+    > .item > .url > .title
+        margin: 0
+        width: 75%
+        font-weight: 500
+        transition: all ease-in-out .2s
+
+    > .item:hover > .url > .title
+        color: $light-yellow
+
+    // maybe we can't nest html5 elements
+    // can you help me?
+    aside
+        position: relative
+        top: 2px
+        margin: 0
+        width: 25%
+        float: right
+        font-weight: 300
+        color: $light-gray
+        text-align: right
+        transition: all ease-in-out .2s
+
+    .item:hover .url aside
+        color: $light-yellow
+
+
+
+.separator-main
+    border-top: 0.4px solid $gray
+    padding-top: 5px
+    padding-bottom: 5px
+    margin: 40px 0 0
+    font-size: 1.3rem
+    color: $light-gray
+    font-weight: 300
+    text-align: center
+    position: relative
+
+    &:before
+        display: block
+        content: " "
+        width: 6px
+        height: 6px
+        border: $gray 1px solid
+        position: absolute
+        top: -5px
+        left: 50%
+        margin-left: -5px
+        background: $background
+        box-shadow: $background 0 0 0 4px
+        border-radius: 5px
+
+.separator-child
+    border-top: 0.3px solid $dark-gray
+    padding-top: 5px
+    padding-bottom: 5px
+    margin: 40px 0 0
+    font-size: 1.3rem
+    color: $light-gray
+    font-weight: 300
+    text-align: center
+    position: relative
+
+    &:before
+        display: block
+        content: " "
+        width: 6px
+        height: 6px
+        border: $dark-gray 1px solid
+        position: absolute
+        top: -5px
+        left: 50%
+        margin-left: -5px
+        background: $background
+        box-shadow: $background 0 0 0 4px
+        border-radius: 5px

@@ -1,7 +1,7 @@
 # main text of home
 name: daniel chen
 nickname: dandandives
-bio: i cook (and write code)
+bio: i cook (and write some code too)
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -15,10 +15,9 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://read.cv/dandandives
 
-url: https://sergiokopplin.github.io/indigo
-# your url: https://USERNAME.github.io
+url: https://danielchen-pyc.github.io
 
 permalink: /:title/
 
@@ -30,9 +29,9 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+# disqus:
+#   shortname: mydisqus # enter this from your disqus account
+#   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -46,7 +45,7 @@ email: poyuchen@alumni.ubc.ca
 authors:
   dandandives:
     name: daniel chen
-    bio: i cook (and write code)
+    bio: i cook (and write some code too)
     external-image: false
     picture: assets/images/profile.jpg
 
@@ -55,9 +54,22 @@ authors:
 # normal = 560px / large = 810px
 width: normal
 
+collections_dir: content
+permalink: /:title/
+collections:
+  experiences:
+    output: true
+    permalink: /experiences/:title
+  design-teams:
+    output: true
+    permalink: /designTeams/:title
+  tech-projects:
+    output: true
+    permalink: /techProjects/:title
+
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -68,7 +80,7 @@ projects: true
 blog: true
 
 read-time: true
-show-tags: true
+show-tag: true
 related: true
 
 # Display links for next and previous posts for the specified categories

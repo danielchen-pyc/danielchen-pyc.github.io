@@ -1,10 +1,10 @@
-.home,
 .blog,
 .projects
     margin-top: 125px
 
     > .list
-        border-top: 1px solid $epsilon
+        border-top: 0.4px solid $gray
+        color: $light-gray
         margin-top: 30px
         padding-top: 40px
         position: relative
@@ -12,24 +12,53 @@
         &:before
             display: block
             content: " "
-            width: 7px
-            height: 7px
-            border: $epsilon 1px solid
+            width: 6px
+            height: 6px
+            border: $gray 1px solid
             position: absolute
             top: -5px
             left: 50%
             margin-left: -5px
-            background: #FFF
-            box-shadow: #FFF 0 0 0 5px
-            border-radius: 3px
+            background: $background
+            box-shadow: $background 0 0 0 4px
+            border-radius: 5px
 
-.home > .list,
+    .post-tags
+        color: $light-gray
+        font-weight: 200
+        font-size: 1.4rem
+        text-transform: uppercase
+        font-weight: 500
+        text-align: center
+        display: block
+        margin-top: 0
+        margin-bottom: 6rem
+        letter-spacing: 1px
+        -webkit-font-smoothing: antialiased
+        text-rendering: optimizeLegibility
+
+        > .item
+            padding: 2px 6px
+            border-radius: 3px
+            font-size: 1.1rem
+            background: $gray
+            color: $black
+            letter-spacing: 1px
+            margin: 3px 1px
+            text-decoration: none
+            display: inline-block
+            transition: all ease-in-out .2s
+
+        > .item:hover
+            color: $rice-white
+
+
 .blog > .list,
 .projects > .list
     > .item
         display: block
         width: 95%
-        margin: 0 auto
+        margin: 40px auto
 
     > .item > .url
         width: 100%
@@ -41,10 +70,17 @@
         margin: 0
         width: 75%
         font-weight: 500
+        font-family: $fontMonospace
         transition: all ease-in-out .2s
 
     > .item:hover > .url > .title
-        color: $alpha
+        color: $light-yellow
+
+    > .item > .projectImg
+        width: 40%
+        display: block
+        margin-left: auto
+        margin-right: auto
 
     // maybe we can't nest html5 elements
     // can you help me?
@@ -55,12 +91,12 @@
         width: 25%
         float: right
         font-weight: 300
-        color: $gama
+        color: $light-gray
         text-align: right
         transition: all ease-in-out .2s
 
     .item:hover .url aside
-        color: $alpha
+        color: $light-yellow
 
 .blog > .list > .item > .url,
 .projects > .list > .item > .url
