@@ -1,5 +1,6 @@
 ---
 title: CarboNet
+author: daniel
 layout: post
 date: 2020-01-01
 image: /assets/images/work/carbonet.png
@@ -8,8 +9,6 @@ tag:
 - python
 - research
 - automation
-# category: blog
-author: daniel
 position: Automation Engineer
 time: 2020-01-01 - 2020-04-30
 duration: 4
