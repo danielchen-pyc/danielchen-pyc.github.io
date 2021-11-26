@@ -9,10 +9,10 @@ pagination:
         {% if post.category == 'project' %}
             <div class="item {% if post.star %}star{% endif %}">
                 <img src="{{ post.image }}" class="projectImg">
-                <p>{{ post.description }}</p>
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                     <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %Y" }}</time></aside>
                     <h3 class="title">{{ post.title }}</h3>
+                    <p>{{ post.description }}</p>
                     {% include post-tags.html ignore_job_type=true %}
                 </a>
             </div>

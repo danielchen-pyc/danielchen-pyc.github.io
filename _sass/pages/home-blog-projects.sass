@@ -25,10 +25,9 @@
 
     .post-tags
         color: $light-gray
-        font-weight: 200
         font-size: 1.4rem
         text-transform: uppercase
-        font-weight: 500
+        font-weight: 800
         text-align: center
         display: block
         margin-top: 0
@@ -75,6 +74,18 @@
 
     > .item:hover > .url > .title
         color: $light-yellow
+
+    > .item > .url > p
+        margin: 0
+        width: 75%
+        font-size: 18px
+        font-weight: 200
+        font-family: $fontQuickSand
+        color: $light-gray
+        transition: all ease-in-out .2s
+    
+    > .item:hover > .url > p
+        color: $font-gray
 
     > .item > .projectImg
         width: 40%
