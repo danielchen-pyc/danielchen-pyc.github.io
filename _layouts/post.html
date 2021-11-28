@@ -8,6 +8,12 @@ layout: page
 
 <h1 class="title">{{ page.title }}</h1>
 
+{% if page.source %}
+    <div class="source-link">
+        <a class="item" href="{{ site.github-url }}{{ page.source }}">source</a>
+    </div>
+{% endif %}
+
 <span class="date">
     <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
     {% if site.read-time %} - {% include read-time.html %}{% endif %}

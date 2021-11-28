@@ -3,7 +3,7 @@
 
     > .title
         text-align: center
-        margin-bottom: 3rem
+        margin-bottom: 2rem
 
     > .date,
     > .post-tags
@@ -29,10 +29,31 @@
             margin: 3px 1px
             text-decoration: none
             display: inline-block
-            transition: all ease-in-out .2s
+            transition: all ease-in-out 0.2s
 
         > .item:hover
             color: $rice-white
+    
+    > .source-link
+        display: block
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        margin-bottom: 20px
+        margin-top: none
+
+        > .item
+            font-weight: 500
+            font-family: $fontMonospace
+            text-decoration: none
+            transition: all ease-in-out 0.2s
+            color: $light-gray
+
+    > .source-link:hover > .item
+        color: $light-yellow
+
+    
+
 
     > .date
         margin-bottom: 2rem
@@ -47,7 +68,8 @@
             text-decoration: none
 
     > .title-image
-        max-height: 120px
+        // max-height: 120px
+        width: 70%
         display: block
         margin: 0 auto
 

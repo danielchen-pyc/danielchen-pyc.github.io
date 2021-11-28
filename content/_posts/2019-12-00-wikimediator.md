@@ -1,5 +1,5 @@
 ---
-title: ":spider_web: Wiki-Mediator and Graph Database"
+title: "🕸 Wiki-Mediator and Graph Database"
 layout: post
 date: 2019-12-23 22:10
 tag: 

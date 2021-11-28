@@ -15,7 +15,7 @@ h1, h2, h3, h4
 h1
 	font-size: 3rem
 	letter-spacing: -1px
-	color: $light-pink
+	color: $light-yellow
 	font-weight: 700
 
 h2
@@ -42,7 +42,7 @@ p
 		letter-spacing: 0.2px
 
 strong
-	font-weight: 400
+	font-weight: 700
 	color: $white
 
 ul,
@@ -50,7 +50,7 @@ ol
 	li
 		line-height: 2.4rem
 		font-weight: 300
-		color: $light-yellow
+		color: $font-gray
 
 img,
 pre,
@@ -60,6 +60,9 @@ iframe
 img,
 pre
 	border-radius: 4px
+
+img
+	margin-bottom: 0
 
 figcaption
 	position: relative
@@ -84,7 +87,7 @@ hr
 	border: none
 	height: 1px
 	margin: 40px auto
-	background: #eee
+	background: $dark-gray
 	width: 100%
 
 figure.highlight
@@ -130,3 +133,14 @@ pre
 
 .wrapper-large
 	max-width: 810px
+
+table
+	table-layout: auto
+	margin-left: auto
+	margin-right: auto
+	border-collapse: collapse
+	border: 1px solid $light-gray
+
+td, th
+	border: 0.5px solid $light-gray
+	white-space: nowrap

@@ -18,6 +18,7 @@ resume-external: true
 resume-url: https://read.cv/dandandives
 
 url: https://danielchen-pyc.github.io
+github-url: https://github.com/danielchen-pyc/
 
 permalink: /:title/
 
@@ -86,7 +87,7 @@ related: true
 # Display links for next and previous posts for the specified categories
 post-advance-links: [blog]
 
-show-author: true
+show-author: false
 animation: true
 
 # add default values to specific pages or layouts

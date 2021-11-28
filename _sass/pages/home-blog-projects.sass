@@ -70,7 +70,7 @@
         width: 75%
         font-weight: 500
         font-family: $fontMonospace
-        transition: all ease-in-out .2s
+        transition: all ease-in-out 0.2s
 
     > .item:hover > .url > .title
         color: $light-yellow
@@ -82,7 +82,7 @@
         font-weight: 200
         font-family: $fontQuickSand
         color: $light-gray
-        transition: all ease-in-out .2s
+        transition: all ease-in-out 0.3s
     
     > .item:hover > .url > p
         color: $font-gray
@@ -92,6 +92,15 @@
         display: block
         margin-left: auto
         margin-right: auto
+        filter: saturate(20%)
+        filter: brightness(80%)
+        filter: opacity(80%)
+        transition: all ease-in-out 0.4s
+    
+    > .item:hover > .projectImg
+        filter: saturate(105%)
+        filter: brightness(100%)
+        filter: opacity(100%)
 
     // maybe we can't nest html5 elements
     // can you help me?

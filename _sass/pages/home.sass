@@ -19,7 +19,7 @@
         > a
             color: $light-gray
             text-decoration: none
-            transition: all ease-in-out .3s
+            transition: all ease-in-out 0.3s
 
         > a:hover
             color: $white
@@ -31,8 +31,10 @@
         margin-left: auto
         margin-right: auto
         width: 45%
-        saturate: 0.2
-        transition: all ease-in-out .3s
+        filter: saturate(20%)
+        filter: brightness(80%)
+        filter: opacity(80%)
+        transition: all ease-in-out 0.5s
 
     .work-date
         margin-top: 0
@@ -118,6 +120,8 @@
     > .item:hover > .url
         .company-logo
             filter: saturate(105%)
+            filter: brightness(100%)
+            filter: opacity(100%)
         p
             color: $light-blue
 
