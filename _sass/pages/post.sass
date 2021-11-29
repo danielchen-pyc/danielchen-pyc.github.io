@@ -3,34 +3,60 @@
 
     > .title
         text-align: center
-        margin-bottom: 3rem
+        margin-bottom: 2rem
 
     > .date,
     > .post-tags
-        color: $gama
-        font-weight: 300
+        color: $light-gray
+        font-weight: 800
         font-size: 1.4rem
         text-transform: uppercase
         text-align: center
         display: block
+        margin-top: 0
         margin-bottom: 6rem
         letter-spacing: 1px
         -webkit-font-smoothing: antialiased
         text-rendering: optimizeLegibility
 
+        > .item
+            padding: 2px 6px
+            border-radius: 3px
+            font-size: 1.1rem
+            background: $gray
+            color: $black
+            letter-spacing: 1px
+            margin: 3px 1px
+            text-decoration: none
+            display: inline-block
+            transition: all ease-in-out 0.2s
+
+        > .item:hover
+            color: $rice-white
+    
+    > .source-link
+        display: block
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        margin-bottom: 20px
+        margin-top: none
+
+        > .item
+            font-weight: 500
+            font-family: $fontMonospace
+            text-decoration: none
+            transition: all ease-in-out 0.2s
+            color: $light-gray
+
+    > .source-link:hover > .item
+        color: $light-yellow
+
+    
+
+
     > .date
         margin-bottom: 2rem
-
-    > .post-tags > .item
-        padding: 2px 8px
-        border-radius: 3px
-        font-size: 1.1rem
-        background: $epsilon
-        color: $alpha
-        letter-spacing: 1px
-        margin: 3px 1px
-        text-decoration: none
-        display: inline-block
 
     // general style
     > h2,
@@ -42,7 +68,8 @@
             text-decoration: none
 
     > .title-image
-        max-height: 120px
+        // max-height: 120px
+        width: 70%
         display: block
         margin: 0 auto
 

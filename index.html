@@ -2,3 +2,73 @@
 layout: page
 title: Home
 ---
+{% capture currentDate %}{{ site.time | date: '%F' }}{% endcapture %}
+{%   assign today = site.time | date: '%s'      %}
+
+
+<div class="separator-main"></div>
+<section class="experience-list">
+    <h2 class="section-title" id="experience">
+        <a href="#experience">work experience</a>
+    </h2>
+    {% for post in site.experiences reversed %}
+    {% if post.isCurrent == true %}
+        {% capture startDate %}{{ post.start-date | date: '%s' }}{% endcapture %}
+        {% assign secondsSince = today | minus: startDate %}
+        {% assign daysSince = secondsSince | divided_by: 86400 %}
+        {% assign monthsSince = daysSince | divided_by: 30 | plus: 1 %}
+    {% else %}
+        {% capture monthsSince %}{{ post.duration }}{% endcapture %}
+    {% endif %}
+    <div class="item">
+        <a class="url" align="center" href="{{ site.url }}{{ post.url }}">
+            <img class="company-logo" src={{ post.image }}></img>
+            <p>{{ post.position }}</p>
+            <div class="work-date-horizontal">
+                <div class="item1">
+                    <h4 class="work-date">{{ post.time }}</h4>
+                </div>
+                <div class="space"></div>
+                <div class="item2">
+                    <h4 class="work-duration">{{ monthsSince }} months</h4>
+                </div>
+            </div>
+            {% include post-tags.html ignore_job_type=true %}
+        </a>
+    </div>
+    {% endfor %}
+</section>
+
+<footer class="separator-child"></footer>
+
+<section class="experience-list">
+    <h2 class="section-title" id="design-teams">
+        <a href="#design-teams">design team</a>
+    </h2>
+    {% for post in site.design-teams %}
+    {% if post.isCurrent == true %}
+        {% capture startDate %}{{ post.start-date | date: '%s' }}{% endcapture %}
+        {% assign secondsSince = today | minus: startDate %}
+        {% assign daysSince = secondsSince | divided_by: 86400 %}
+        {% assign monthsSince = daysSince | divided_by: 30 | plus: 1 %}
+    {% else %}
+        {% capture monthsSince %}{{ post.duration }}{% endcapture %}
+    {% endif %}
+    <div class="item">
+        <a class="url" align="center" href="{{ site.url }}{{ post.url }}">
+            <img class="company-logo" src={{ post.image }}></img>
+            <p>{{ post.position }}</p>
+            <div class="work-date-horizontal">
+                <div class="item1">
+                    <h4 class="work-date">{{ post.time }}</h4>
+                </div>
+                <div class="space"></div>
+                <div class="item2">
+                    <h4 class="work-duration">{{ monthsSince }} months</h4>
+                </div>
+            </div>
+            {% include post-tags.html ignore_job_type=true %}
+        </a>
+    </div>
+    {% endfor %}
+</section>

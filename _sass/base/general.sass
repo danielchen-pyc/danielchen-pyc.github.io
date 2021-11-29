@@ -2,19 +2,20 @@ body, html
 	font-size: 62.5%
 
 body
-	font: 16px $fontSans
-	color: $alpha
+	font: 16px $fontQuickSand
+	color: $light-yellow
+	background: $background
 
 h1, h2, h3, h4
-	font-family: $fontSans
-	color: $beta
+	font-family: $fontRedHat
+	color: $light-pink
 	-webkit-font-smoothing: antialiased
 	text-rendering: optimizeLegibility
 
 h1
 	font-size: 3rem
 	letter-spacing: -1px
-	color: $beta
+	color: $light-yellow
 	font-weight: 700
 
 h2
@@ -27,12 +28,12 @@ h4
 	font-size: 1.6rem
 
 a
-	color: $delta
+	color: $light-blue
 	text-decoration: underline
 
 p
 	line-height: 1.7
-	color: $alpha
+	color: $font-gray
 	font-weight: 300
 	margin-bottom: 20px
 	letter-spacing: 0.4px
@@ -41,15 +42,15 @@ p
 		letter-spacing: 0.2px
 
 strong
-	font-weight: 400
-	color: #000
+	font-weight: 700
+	color: $white
 
 ul,
 ol
 	li
 		line-height: 2.4rem
 		font-weight: 300
-		color: $alpha
+		color: $font-gray
 
 img,
 pre,
@@ -60,6 +61,9 @@ img,
 pre
 	border-radius: 4px
 
+img
+	margin-bottom: 0
+
 figcaption
 	position: relative
 	top: -20px
@@ -69,7 +73,7 @@ figcaption
 	width: 100%
 	text-align: center
 	font-size: 1.3rem
-	color: $gama
+	color: $light-gray
 	font-weight: 300
 
 	@media #{$mobile}
@@ -83,20 +87,21 @@ hr
 	border: none
 	height: 1px
 	margin: 40px auto
-	background: #eee
+	background: $dark-gray
 	width: 100%
 
 figure.highlight
 	width: 100%
 	margin: 0
+	color: $black
 
 code,
 tt
 	padding: 1px 0
 	font-family: $fontMonospace
-	font-size: 12px
-	line-height: 20px
-	background: #fff
+	font-weight: 400
+	color: $font-code
+	font-size: 1.2rem
 	border-radius: 2px
 
 pre
@@ -108,8 +113,7 @@ pre
 	font-size: 1.2rem
 	line-height: 2rem
 	overflow: auto
-	background: #fff
-	border: 1px solid $epsilon
+	border: 1px solid $wall-white
 	border-radius: 2px
 
 .wrapper-normal,
@@ -129,3 +133,14 @@ pre
 
 .wrapper-large
 	max-width: 810px
+
+table
+	table-layout: auto
+	margin-left: auto
+	margin-right: auto
+	border-collapse: collapse
+	border: 1px solid $light-gray
+
+td, th
+	border: 0.5px solid $light-gray
+	white-space: nowrap

@@ -1,9 +1,9 @@
 .footer-main
-    border-top: 1px solid $epsilon
+    border-top: 0.4px solid $gray
     padding: 40px 0
     margin: 40px 0 0
     font-size: 1.3rem
-    color: $gama
+    color: $light-gray
     font-weight: 300
     text-align: center
     position: relative
@@ -11,16 +11,16 @@
     &:before
         display: block
         content: " "
-        width: 7px
-        height: 7px
-        border: $epsilon 1px solid
+        width: 6px
+        height: 6px
+        border: $gray 1px solid
         position: absolute
         top: -5px
         left: 50%
         margin-left: -5px
-        background: #FFF
-        box-shadow: #FFF 0 0 0 5px
-        border-radius: 3px
+        background: $background
+        box-shadow: $background 0 0 0 4px
+        border-radius: 5px
 
     > .copyright
         padding-left: 10px
@@ -31,7 +31,7 @@
 
         > .icon
             width: 15px !important
-            fill: $gama !important
+            fill: $light-gray !important
             transition: ease-in-out all .3s
             position: relative
             display: inherit
@@ -40,18 +40,18 @@
             left: 2px
 
             &:hover
-                fill: $delta !important
+                fill: $light-blue !important
 
     > .extra
-        color: $gama
+        color: $light-gray
         margin-top: 0
 
         > .link
-            color: $beta
+            color: $light-pink
             text-decoration: none
             border-bottom: 1px solid transparent
             transition: ease-in-out all .3s
             padding-bottom: 1px
 
             &:hover
-                border-color: $gama
+                border-color: $light-gray
