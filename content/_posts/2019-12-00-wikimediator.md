@@ -1,35 +1,16 @@
 ---
 title: "🕸 Wiki-Mediator and Graph Database"
+author: daniel
 layout: post
 date: 2019-12-23 22:10
 tag: 
 - java
-image: /assets/images/work/Imageworks_logo.png
+image: /assets/images/project/wiki/Untitled-1.png
 headerImage: true
 projects: true
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "Course Project for CPEN221: Interacting with Wikipedia API"
 category: project
-author: johndoe
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
-
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
-
----
-
-What has inside?
-
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
-
----
-
-[Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
+:warning: Still Under Construction! :warning:

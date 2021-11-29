@@ -8,8 +8,12 @@ pagination:
     {% for post in paginator.posts %}
         {% if post.category == 'project' %}
             <div class="item {% if post.star %}star{% endif %}">
-                <img src="{{ post.image }}" class="projectImg">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                    {% if post.imagewidth %}
+                        <img src="{{ post.image }}" style="width:{{ post.imagewidth }};" class="projectImgWidth">
+                    {% else %}
+                        <img src="{{ post.image }}" class="projectImg">
+                    {% endif %}
                     <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %Y" }}</time></aside>
                     <h3 class="title">{{ post.title }}</h3>
                     <p>{{ post.description }}</p>

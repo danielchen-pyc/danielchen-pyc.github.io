@@ -87,19 +87,36 @@
     > .item:hover > .url > p
         color: $font-gray
 
-    > .item > .projectImg
+    > .item > .url > .projectImg
         width: 40%
         display: block
         margin-left: auto
         margin-right: auto
+        margin-bottom: 10px
         filter: saturate(20%)
         filter: brightness(80%)
         filter: opacity(80%)
         transition: all ease-in-out 0.4s
     
-    > .item:hover > .projectImg
+    > .item:hover > .url > .projectImg
         filter: saturate(105%)
-        filter: brightness(100%)
+        filter: brightness(110%)
+        filter: opacity(100%)
+
+    > .item > .url > .projectImgWidth
+        width: 40%
+        display: block
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 10px
+        filter: saturate(20%)
+        filter: brightness(80%)
+        filter: opacity(80%)
+        transition: all ease-in-out 0.4s
+    
+    > .item:hover > .url > .projectImgWidth
+        filter: saturate(105%)
+        filter: brightness(110%)
         filter: opacity(100%)
 
     // maybe we can't nest html5 elements
