@@ -12,7 +12,7 @@ tag:
 - mechanical design
 # category: blog
 author: daniel
-position: Developer
+position: Lead Electrical / Software Developer
 time: 2019-01-01 - 2020-01-01
 duration: 12
 isCurrent: false
