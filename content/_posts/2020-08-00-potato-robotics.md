@@ -11,10 +11,12 @@ tag:
 image: /assets/images/project/potato-robotics/FourBarLinkageGripper.gif
 headerImage: true
 projects: true
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "Course Project for ENPH253: Fully Autonomous Robot from Scratch"
 category: project
 externalLink: false
 source: PotatoRobotics_Alpha
 ---
+
+
 
 :warning: Still Under Construction! :warning:

@@ -4,6 +4,7 @@ author: daniel
 layout: post
 date: 2020-12-23 22:10
 tag: 
+- javascript
 - MongoDB
 - ExpressJS
 - ReactJS
@@ -64,7 +65,9 @@ The same data is stored in `MongoDB` in the following format:
 <figcaption class="caption">Simple UI for the MERN exercise tracker</figcaption>
 
 # Thoughts
-It was a fun experience gaining more knowledge of MERN stack and `Javascript` in general! To me, the whole router thing was really abstract at first but I was able to understand the underlying structure of it, which is good :slightly_smiling_face:. It is also a very good skill to have, not like I'm gonna be a WebApp developer but maybe there will be some project in the future that requires a webapp to visualize it. At least I will be able to say "I've done it". ☺
+It was a fun experience gaining more knowledge of MERN stack and `Javascript` in general! To me, the whole router thing was really abstract at first but I was able to understand the underlying structure of it, which is good :slightly_smiling_face:. It is also a very good skill to have, not like I'm gonna be a WebApp developer but maybe there will be some project in the future that requires a webapp to visualize it. 
+
+At least I will be able to say "I've done it". ☺
 
 [1]: /designTeams/launchpad
 [2]: https://github.com/ubclaunchpad/life-at-ubc

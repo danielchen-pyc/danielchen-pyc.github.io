@@ -5,12 +5,11 @@ date: 2020-01-01
 image: /assets/images/design-team/subc.png
 headerImage: false
 tag:
+- C++
 - fluid mechanics
 - research
-- simulation
-- machining
+- prototyping
 - mechanical design
-# category: blog
 author: daniel
 position: Lead Electrical / Software Developer
 time: 2019-01-01 - 2020-01-01
@@ -19,4 +18,4 @@ isCurrent: false
 ---
 
 
-## Hello
+:warning: Still Under Construction! :warning:
