@@ -116,11 +116,15 @@ pre
 	border: 1px solid $wall-white
 	border-radius: 2px
 
+.wrapper-medium,
 .wrapper-normal,
 .wrapper-large
 	height: 100%
 	width: 96%
 	margin: 0 auto
+	margin-left: auto
+	margin-right: auto
+	display: block
 
 	@media #{$mobile}
 		width: 88%
@@ -128,11 +132,23 @@ pre
 	@media #{$tablet}
 		width: 88%
 
+.wrapper-medium
+	max-width: 400px
+
+	> .img
+		margin-bottom: 5px
+
 .wrapper-normal
 	max-width: 560px
 
+	> .img
+		margin-bottom: 5px
+
 .wrapper-large
 	max-width: 810px
+
+	> .img
+		margin-bottom: 5px
 
 table
 	table-layout: auto

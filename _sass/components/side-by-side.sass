@@ -46,3 +46,53 @@
         vertical-align: top
         text-align: center
         font-size: 1.3rem
+
+.side-by-side-normal
+
+    margin-bottom: 0
+
+    @media #{$above}
+        width: 100%
+        margin: 6rem 0 6rem 4%
+
+    @media #{$below}
+        width: 100%
+        margin: 4rem 0
+
+    > .toleft,
+    > .toright
+        display: inline-block
+        width: 42%
+        margin-bottom: 0
+
+        @media #{$below}
+            img
+                text-align: center
+                display: block
+                margin: 0 auto
+
+    > .toleft
+        @media #{$above}
+            margin-right: 2%
+            margin-bottom: 0
+
+    > .toright
+        @media #{$above}
+            margin-left: 5%
+            margin-bottom: 0
+
+    > .toleft > p,
+    > .toright > p
+        margin: 0 0 4rem 0
+
+        @media #{$below}
+            margin: 0
+
+.side-by-side-caption
+    vertical-align: top
+    text-align: center
+    font-size: 1.3rem
+    margin-top: 0
+    margin-left: auto
+    margin-right: auto
+    display: block

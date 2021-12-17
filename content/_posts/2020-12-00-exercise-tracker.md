@@ -34,6 +34,8 @@ During the winter break between term 1 and term 2, I thought it would be nice if
 # Implementation
 I used `Express` to create some routers for the `POST` and `GET` requests for supporting the following functionalities: add user, add exercise event, delete exercise event, and edit exercise event. The exercise events and users will be stored in the `MongoDB Atlas` database via `mongoose`. The website is running on `Node` and the UI is built using `React`, designed using `Bootstrap` and `HTML`. 
 
+[comment]: # (TODO: Add diagram for routers)
+
 The user and exercise events are formatted in `JSON` before storing it in `MongoDB`. The data is sent in the format as shown: 
 
 {% highlight JSON %}
