@@ -162,7 +162,47 @@ After [some research][3], I finalized a claw design that is similar to the geare
 
 <h1 id="electrical">Electrical Design</h1>
 
-<!-- In this project we have to  -->
+In this project we have to design our own circuit for controlling the robot as well and the components are limited to basic electrical components (resistor, diodes, capacitors, AND/OR/NOT gates, etc.). **The steering of the robot is completely controlled by the angular velocity differences between the wheels and the angular velocity of the wheels is controlled by the current flowing through it.** We are not allowed to use pre-programmed or unauthorized motors or chips that facilitates this mechanism. 
+
+
+We are using the `STM-32 Blue Pill Microcontroller Board` for the main controller of this project. To control 4 motors at the same time by regulating the amount of current through the motors, we use a **H-Bridge circuit** to achieve that. Normally, the H-Bridge circuit can be bought as a integrated chip, but in order to have a deeper understanding of circuit design, soldering and circuit debugging, we build our own. 
+
+The two main electrical components in this project are [H-Bridge](#hbridge) and [IR detector](#IR-detector).
+
+<h2 id="hbridge">H-Bridge Circuit</h2>
+
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/bluepill.png"/>
+    <figcaption class="caption">STM-32 Blue Pill Microcontroller Board</figcaption>
+</div>
+
+<div class="side-by-side">
+    <div class="toleft" style="width: 40%;">
+        <img class="image" src="/assets/images/project/potato-robotics/HBridge.png">
+        <figcaption class="caption">H-Bridge Circuit Layout</figcaption>
+    </div>
+    <div class="toright" style="width: 55%;">
+        <img class="image" src="/assets/images/project/potato-robotics/circuit-main.jpg">
+        <figcaption class="caption">H-Bridge Circuit</figcaption>
+    </div>
+</div>
+
+
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/circuit-main-3.png">
+    <figcaption class="caption">H-Bridge Circuit with Annotations</figcaption>
+</div>
+
+<br/>
+*Side Note: I also found this little power clip really useful (reduces cluttering)* :) 
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/powerclips.png">
+    <figcaption class="caption">Male and Female Power Cable Connectors</figcaption>
+</div>
+
+
+<h2 id="IR-detector">IR Detection (Tape Following)</h2>
+
 
 
 
