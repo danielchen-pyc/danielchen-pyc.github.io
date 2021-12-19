@@ -167,13 +167,19 @@ In this project we have to design our own circuit for controlling the robot as w
 
 We are using the `STM-32 Blue Pill Microcontroller Board` for the main controller of this project. To control 4 motors at the same time by regulating the amount of current through the motors, we use a **H-Bridge circuit** to achieve that. Normally, the H-Bridge circuit can be bought as a integrated chip, but in order to have a deeper understanding of circuit design, soldering and circuit debugging, we build our own. 
 
-The two main electrical components in this project are [H-Bridge](#hbridge) and [IR detector](#IR-detector).
+The two main electrical components in this project are [H-Bridge](#hbridge), [IR detector](#IR-detector) and [Control](#control).
 
 <h2 id="hbridge">H-Bridge Circuit</h2>
 
 <div class="wrapper-normal">
     <img class="image" src="/assets/images/project/potato-robotics/bluepill.png"/>
     <figcaption class="caption">STM-32 Blue Pill Microcontroller Board</figcaption>
+</div>
+
+<br/>
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/h-bridge.png"/>
+    <figcaption class="caption">H-Bridge Circuit Layout</figcaption>
 </div>
 
 <div class="side-by-side">
@@ -194,7 +200,7 @@ The two main electrical components in this project are [H-Bridge](#hbridge) and 
 </div>
 
 <br/>
-*Side Note: I also found this little power clip really useful (reduces cluttering)* :) 
+*Side Note: I also found this little power clip really useful :point_down: (reduces cluttering)* :) 
 <div class="wrapper-normal">
     <img class="image" src="/assets/images/project/potato-robotics/powerclips.png">
     <figcaption class="caption">Male and Female Power Cable Connectors</figcaption>
@@ -203,7 +209,33 @@ The two main electrical components in this project are [H-Bridge](#hbridge) and 
 
 <h2 id="IR-detector">IR Detection (Tape Following)</h2>
 
+The robot also has to be able to maneuver itself around the competition arena, and the best way for it to do so is adding the tape following feature. The only approved way to guide this robot is via black tapes (no remote control allowed for it to be completely autonomous). We have two phototransistors (`TCRT5000 Reflective Optical Sensor with Transistor Output`) in front of the robot that detects the black tape on the ground. It will signal the robot to stay on the black line as it moves. 
 
+<div class="side-by-side">
+    <div class="toleft" style="width: 40%;">
+        <img class="image" src="/assets/images/project/potato-robotics/LightsensorCircuitdrawn.png">
+        <figcaption class="caption">Light Sensor Circuit Layout</figcaption>
+    </div>
+    <div class="toright" style="width: 55%;">
+        <img class="image" src="/assets/images/project/potato-robotics/lightsensorcircuit.png">
+        <figcaption class="caption">Light Sensor Circuit</figcaption>
+    </div>
+</div>
+
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/lightsensor.png">
+    <figcaption class="caption">Two Light Sensors</figcaption>
+</div>
+
+
+<br/>
+
+Controlling the robot using two light sensors can actually be challenging, that is why we need [PID control](#control) to navigate the robot smoothly.
+
+
+<h2 id="control">PID Control</h2>
+
+PID is a crucial concept in control systems which stands for Proportional, Integral, and Derivative. If we just map the values captured by the phototransistors **linearly** to the rotational speed of the wheels, the robot will move in a very unstable fashion (jiggling side to side a lot). We want the robot to able to not only generate a smooth, stable trajectory, but also knows how to react when the black tape directs it to a sharp turn.
 
 
 :warning: Still Under Construction! :warning:
