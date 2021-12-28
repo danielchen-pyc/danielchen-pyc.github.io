@@ -25,7 +25,7 @@ The ultimate goal for this course is to build a **fully autonomous** aluminum ca
 - Basic self-localization
 - Return to starting position
 
-The robot also needs to be **constructed entirely from scratch**, from [prototyping](#prototyping), [mechanical design](#mechanical), [electrical design](#electrical), to software programming. 
+The robot also needs to be **constructed entirely from scratch**, from [prototyping](#prototyping), [mechanical design](#mechanical), [electrical design](#electrical), to [software programming](#software). 
 
 
 <h1 id="prototyping">Brainstorming Ideas</h1>
@@ -235,10 +235,105 @@ Controlling the robot using two light sensors can actually be challenging, that 
 
 <h2 id="control">PID Control</h2>
 
-PID is a crucial concept in control systems which stands for Proportional, Integral, and Derivative. If we just map the values captured by the phototransistors **linearly** to the rotational speed of the wheels, the robot will move in a very unstable fashion (jiggling side to side a lot). We want the robot to able to not only generate a smooth, stable trajectory, but also knows how to react when the black tape directs it to a sharp turn.
+PID is a crucial concept in control systems which stands for Proportional, Integral, and Derivative. If we just map the values captured by the phototransistors **linearly** to the rotational speed of the wheels, the robot will move in a very unstable fashion (jiggling side to side a lot). We want the robot to able to not only generate a smooth, stable trajectory, but also knows how to react when the black tape directs it to a sharp turn. We introduce feedback loops that consist of fine-tuned gains (proportional, integral, derivative) to control the final output of the wheel speed. 
+
+<div class="wrapper-normal">
+    <img class="image" src="/assets/images/project/potato-robotics/pidexample.png">
+    <figcaption class="caption">PID Explanation</figcaption>
+</div>
+
+<br/>
+
+| **Situation** | &nbsp;&nbsp; **Left Sensor** &nbsp;&nbsp; | &nbsp;&nbsp; **Right Sensor** &nbsp;&nbsp; | &nbsp;&nbsp; **Robot Offset from Tape** &nbsp;&nbsp; | **Response** |
+|:-------------:|:------------:|:------:|:------:|:------:|
+| Both Sensor on Tape | 1 | 1 | 0 cm | Straight |
+| Left On, Right Off | 1 | 0 | 1 cm | Slight Left |
+| Left Off, Right On | 0 | 1 | -1 cm | &nbsp;&nbsp; Slight Right &nbsp;&nbsp; |
+| &nbsp;&nbsp; Both Sensor Off (Left was last on) &nbsp;&nbsp; | 0 | 0 | >= 5 cm | Left |
+| Both Sensor Off (Right was last on) | 0 | 0 | <= -5 cm | Right |
+
+<figcaption class="caption">Steering using Sensor Output</figcaption>
+
+Now that we have the electrical portion set up, we need software programming to actually analyze the light sensor outputs and perform the PID control.
+
+<br/>
+
+<h1 id="software">Software Construction</h1>
+
+Our software is written in primarily **C++**. I divided the robot into three main classes ([DriveSystem](#driveSys), [SonarSystem](#sonarSys) and [ClawSystem](#clawSys)) and added subclasses as needed. 
+
+<div class="wrapper-medium">
+    <img class="image" src="/assets/images/project/potato-robotics/software.png">
+    <figcaption class="caption">Software Construction Diagram</figcaption>
+</div>
+
+<br/>
+<h2 id="driveSys">Drive System Code</h2>
+
+`DriveSystem` controls the motors, i.e. speed control, steering, brake, etc. It has a child class `Motor`, which mainly commands the wheels to spin forward or backwards. There is another class under `Motor`, `PwmActuator`, which performs lower level communications with the bluepill board, such as reading and writing to a specific pin. The wheel speed can be directly regulated by the analog value written to that specific pin and the h-bridge is designed to draw power to supply the motors according to that analog value. For example, rotating can be commanded by setting one side 0 and another side `ROTATE_SPEED`.
+
+{% highlight c++ %}
+void DriveSystem::rotate_left() {
+    this->update(0, ROTATE_SPEED);
+}
+
+void DriveSystem::rotate_right() {
+    this->update(ROTATE_SPEED, 0);
+}
+{% endhighlight %}
+<figcaption class="caption">Functions for rotating left/right</figcaption>
+
+<br/>
+<h2 id="sonarSys">Sonar System Code</h2>
+
+There are three sonars that detects cans: front, left, right. If any one of the sonars detects an obect closer than around half a meter (50 cm), it would initiate a process that collects the cans. 
+
+{% highlight c++ %}
+SonarSystem::SonarSystem(int left_trigger, int left_echo, int front_trigger, int front_echo, int right_trigger, int right_echo) {
+    SonarSystem::sonar_left = new NewPing(left_trigger, left_echo, MAX_DISTANCE);
+    SonarSystem::sonar_front = new NewPing(front_trigger, front_echo, MAX_DISTANCE);
+    SonarSystem::sonar_right = new NewPing(right_trigger, right_echo, MAX_DISTANCE);
+}
+{% endhighlight %}
+<figcaption class="caption">Function for initializing all three sonars</figcaption>
+
+<br/>
+<h2 id="clawSys">Claw System Code</h2>
+
+Claw system is initiated when the robot starts and will be activated whenever the sonar system detects a can that is close enough to the robot. It controls a motor that lifts and drops the claw, and another motor that open and closes the claw. 
+
+{% highlight c++ %}
+void ClawSystem::open_claw() {
+    this->claw_servo.attach(this->claw_pin);  
+    delay(200);
+    for (int servoPos = 90; servoPos >= 59; servoPos--) {
+        this->claw_servo.write(servoPos);
+        delay(33);
+    }
+    for (int servoPos2 = 59; servoPos2 <= 90; servoPos2++) {
+        this->claw_servo.write(servoPos2);
+        delay(32);
+    }
+    this->currentPos = "open";
+    this->claw_servo.detach();
+}
+
+void ClawSystem::grab_can_sequence() {
+    this->open_claw();
+    this->lower_arm();
+    this->grab();
+    delay(100);
+}
+{% endhighlight %}
+<figcaption class="caption">Functions for Grab-Can-Sequence</figcaption>
 
 
-:warning: Still Under Construction! :warning:
+# Final Results and Thoughts
+
+Eventually, all of our robots are able to successfully follow the tape and collect cans! I had multiple 10/10 runs before the competition and was really proud of what I have achieved and the skills that I have learnt. We got into top 8 in the final competition and was tied at the fifth place. Despite of making our individual robots during the pandemic, I am still extremely satisfied with the results and our accomplishments. 
+
+Making robots is really fun! :robot:
+
 
 [1]: https://docs.google.com/presentation/d/1NzWH9MaUuBmohNG058sFNCbh795XGM3u00Jgc1uZl1A/edit?usp=sharing
 [2]: https://dspace.mit.edu/bitstream/handle/1721.1/92068/897211724-MIT.pdf;sequence=2
