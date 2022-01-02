@@ -31,25 +31,31 @@ Since the films we make are highly confidential for not only us, but most import
 
 Here, you will find the outline of my projects in Imageworks without the minor details, due to confidentiality. 
 
-## Projects
-- Machine-Learning Chatbot for Querying Employee Info
-- Gnome Shell Extension for Internal Media Dispatch
-- Message Queue / Listner Company-Level API Development
-- Integrated Gnome Notification System for Company-Wide Application Messages
-- Data Studio Application Usage / Data Analysis
+
+<br/>
+
+# Projects
 
 
-# Machine-Learning Chatbot for Querying Employee Info
-
-
-# Gnome Shell Extension for Internal Media Dispatch
-
-
-# Message Queue / Listner Company-Level API Development
-
-
-# Integrated Gnome Notification System for Company-Wide Application Messages
-
+<section class="list">
+    {% for post in site.posts reversed %}
+        {% if post.category == 'sony' %}
+            <div class="item {% if post.star %}star{% endif %}">
+                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                    {% if post.imagewidth %}
+                        <img src="{{ post.image }}" style="width:{{ post.imagewidth }};" class="projectImgWidth">
+                    {% else %}
+                        <img src="{{ post.image }}" class="projectImg">
+                    {% endif %}
+                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %Y" }}</time></aside>
+                    <h3 class="title">{{ post.title }}</h3>
+                    <p>{{ post.description }}</p>
+                    {% include post-tags.html ignore_job_type=true %}
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</section>
 
 # Data Studio Application Usage / Data Analysis
 
