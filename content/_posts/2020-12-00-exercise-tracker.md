@@ -16,6 +16,7 @@ description: "MERN Stack App for Tracking Daily Exercises"
 category: project
 externalLink: false
 source: learn-MERN-stack
+hidden: show
 ---
 
 # Motivation

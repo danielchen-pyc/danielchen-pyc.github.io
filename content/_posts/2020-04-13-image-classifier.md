@@ -16,6 +16,8 @@ description: "Teaching myself machine learning during quarantine: Mini Image Cla
 category: project
 externalLink: false
 source: Image_Classifier
+imagewidth: 50%
+hidden: show
 ---
 
 # Motivation

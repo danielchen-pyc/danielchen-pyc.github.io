@@ -2,7 +2,7 @@
 title: ":robot: Machine-Learning Chatbot for Querying Employee Info"
 author: daniel
 layout: post
-date: 2020-05-01 22:10
+date: 2021-05-01 22:10
 tag: 
 - ML
 - Javascript
@@ -11,13 +11,13 @@ tag:
 - Google API
 - DialogFlow
 - App Script
-hidden: true
 image: /assets/images/work/sony-pictures/chatbot/icons.png
 headerImage: true
 projects: true
 description: "Internal Google Chatbot that facilitates Company Workflow by Obtaining Relevant Info"
 category: sony
 externalLink: false
+hidden: show
 ---
 
 

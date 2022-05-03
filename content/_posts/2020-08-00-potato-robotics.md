@@ -15,6 +15,7 @@ description: "Course Project for ENPH253: Fully Autonomous Robot from Scratch"
 category: project
 externalLink: false
 source: PotatoRobotics_Alpha
+hidden: show
 ---
 
 # Project Goal
