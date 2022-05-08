@@ -19,6 +19,8 @@ imagewidth: 50%
 hidden: show
 ---
 
+*Special thanks to my teammates: Jaden Ingleton, Sayem Zaman, and Trent Suzuki :)*
+
 # Introduction
 
 ## Project Overview
@@ -51,7 +53,9 @@ It is worth mentioning that we initially chose `Matlab` as our main language to 
 
 <details>
 <summary>Code Snippet for our GMR class</summary>
+<br/>
 {% highlight python %}
+
 class GMR():
 
     def gaussianMixtureRegression(self, input, means, covar, inputCols=list(range(6)), outputCols=list(range(6, 9))):

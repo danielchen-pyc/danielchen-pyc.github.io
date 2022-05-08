@@ -30,7 +30,7 @@ As a software engineer intern in Sony Pictures Imageworks, one of the biggest VF
 ## Confidentiality
 Since the films we make are highly confidential for not only us, but most importantly, the company's clients - one small leak of any detail of the movie will mess up their whole marketing scheme and cost them tens of thousands/millions of dollars (just for example, the latest *Spiderman No Way Home*, as well as most of the previous Spiderman movies). **Roughly 80-90% of the applications** the employees and artists use are completely internal with limited access to the internet. Moreover, any software request (python package installation, internet access to a specific tool, etc.) requires the approval of the security team. The more access the software might need, the higher the level of approval is required. 
 
-Here, you will find the outline of my projects in Imageworks without the minor details, due to confidentiality. 
+Here, you will find the rough purpose/outline of my projects at Sony Pictures Imageworks without the minor details, due to confidentiality. 
 
 
 <br/>

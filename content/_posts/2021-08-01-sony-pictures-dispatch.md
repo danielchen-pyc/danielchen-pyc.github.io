@@ -22,7 +22,7 @@ hidden: show
 
 # Introduction
 
-Because of the heavily secured system, no one is allowed to upload media (files, photos, recordings, etc.) to any external website, including Google and all its services. However, there are also many artists that needs visuals (screenshots, videos) to communicate effectively. One project that has been proposed for a long time is a internal tool that allows employees to send screenshots/recordings fast and conveniently.
+Because of the heavily secured system at Sony Pictures, no one is allowed to upload media (files, photos, recordings, etc.) to any external website, including Google and all its services. However, there are also many artists that needs visuals (screenshots, videos) to communicate effectively. One project that has been proposed for a long time is an internal tool that allows employees to send screenshots/recordings fast and conveniently.
 
 # Structure
 
