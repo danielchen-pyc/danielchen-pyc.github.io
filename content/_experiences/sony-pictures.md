@@ -9,12 +9,13 @@ tag:
 - Javascript
 - GJS
 - GCP
+- C++
 - Gnome Shell
 - App Script
 - API Dev
 # category: blog
 author: daniel
-position: Software Engineer
+position: Full Stack Software Engineer
 time: 2021-05-01 - Present
 start-date: 2021-05-01
 isCurrent: true
