@@ -96,31 +96,31 @@ Steps:
 
 {% highlight javascript %}
 function detectIntent(message, optLang){
-  var goa = cGoa.GoaApp.createGoa('dialogflow_serviceaccount',
+    var goa = cGoa.GoaApp.createGoa('dialogflow_serviceaccount',
                                    PropertiesService.getScriptProperties()).execute();
-  if (!goa.hasToken()) {
-    throw 'something went wrong with goa - no token for calls';
-  }
-
-  Dialogflow.setTokenService(function(){ return goa.getToken(); } );
-
-  var requestResource = {
-    "queryInput": {
-      "text": {
-        "text": message,
-        "languageCode": optLang || "en"
-      }
-    },
-    "queryParams": {
-      "timeZone": Session.getScriptTimeZone()
+    if (!goa.hasToken()) {
+        throw 'something went wrong with goa - no token for calls';
     }
-  };
 
-  var PROJECT_ID = 'xxxxx'; // your Dialogflow proejct ID (in DF panel -> Setting)
-  var SESSION_ID = encodeURIComponent(Session.getTemporaryActiveUserKey()); 
-  var session = 'projects/'+PROJECT_ID+'/agent/sessions/'+SESSION_ID; // 
-  var intent = Dialogflow.projectsAgentSessionsDetectIntent(session, requestResource, {});
-  return intent;
+    Dialogflow.setTokenService( function(){ return goa.getToken(); } );
+
+    var requestResource = {
+        "queryInput": {
+            "text": {
+                "text": message,
+                "languageCode": optLang || "en"
+            }
+        },
+        "queryParams": {
+            "timeZone": Session.getScriptTimeZone()
+        }
+    };
+
+    var PROJECT_ID = 'xxxxx'; // your Dialogflow proejct ID (in DF panel -> Setting)
+    var SESSION_ID = encodeURIComponent(Session.getTemporaryActiveUserKey()); 
+    var session = 'projects/'+PROJECT_ID+'/agent/sessions/'+SESSION_ID; // 
+    var intent = Dialogflow.projectsAgentSessionsDetectIntent(session, requestResource, {});
+    return intent;
 }
 {% endhighlight %}
 <figcaption class="caption">The function that outputs the response from DialogFlow programmatically! </figcaption>

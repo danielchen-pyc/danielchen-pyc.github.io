@@ -1,5 +1,5 @@
 ---
-title: ":robot: Integrated Gnome Notification System for Company-Wide Application Messages (Part 2)"
+title: "🎅🏽 Integrated Gnome Notification System for Company-Wide Application Messages (Part 2)"
 author: daniel
 layout: post
 date: 2022-04-25 22:10
