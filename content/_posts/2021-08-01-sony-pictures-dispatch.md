@@ -11,7 +11,7 @@ tag:
 - Google Cloud Service
 - UI/UX
 - CSS
-image: /assets/images/work/sony-pictures/dispatch/Gnome.png
+image: /assets/images/work/sony-pictures/dispatch/gnome.png
 headerImage: true
 projects: true
 description: "Internal Message Dispatch System that allows Employees to Send Media/Notes"
