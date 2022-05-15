@@ -1,0 +1,28 @@
+---
+layout: page
+title: Life
+---
+
+<h3 class="life-title">Talking to the moon</h3>
+
+<ul class="life">
+    {% for note in site.data.life %}
+        <li>
+            <div class="item {% if note.star %}star{% endif %}">
+                <a href="#{{ note.date | date:"%Y-%m-%d" }}">
+                    <aside id="{{ note.date | date:"%Y-%m-%d" }}"><time datetime="{{ note.date | date:"%Y/%m/%d" }}">
+                        >&nbsp;&nbsp; {% assign d = note.date | date: "%d" | plus:'0' %}
+                        {{ note.date | date: "%B" }} 
+                        {% case d %}
+                            {% when 1 or 21 or 31 %}{{ d }}st
+                            {% when 2 or 22 %}{{ d }}nd
+                            {% when 3 or 23 %}{{ d }}rd
+                            {% else %}{{ d }}th
+                            {% endcase %},
+                        {{ note.date | date: "%Y" }}</time></aside>
+                </a>
+                <p>{{ note.content }}</p>
+            </div>
+        </li>
+    {% endfor %}
+</ul>

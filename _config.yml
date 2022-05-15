@@ -1,10 +1,10 @@
 # main text of home
-name: daniel chen
+name: po-yu chen
 nickname: dandandives
 bio: i write code
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Po Yu's Blog
 
 # if it's an external image, update below for true
 # better with square images
@@ -56,7 +56,6 @@ authors:
 width: large
 
 collections_dir: content
-permalink: /:title/
 collections:
   experiences:
     output: true
@@ -64,9 +63,9 @@ collections:
   design-teams:
     output: true
     permalink: /designTeams/:title
-  tech-projects:
-    output: true
-    permalink: /techProjects/:title
+  life:
+    output: false
+    # permalink: /life/:title
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 # pagination:
@@ -79,6 +78,7 @@ collections:
 # about: true
 projects: true
 blog: true
+lifeUpdate: true
 
 read-time: true
 show-tags: true
