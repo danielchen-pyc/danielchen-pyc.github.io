@@ -10,7 +10,7 @@ tag:
 - GJS
 - GCP
 - C++
-- Gnome Shell
+- Gnome
 - App Script
 - API Dev
 # category: blog
