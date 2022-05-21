@@ -6,8 +6,6 @@ image: /assets/images/markdown.jpg
 headerImage: false
 hidden: true
 tag:
-- markdown
-- elements
 star: true
 category: blog
 author: johndoe

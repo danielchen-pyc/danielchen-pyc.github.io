@@ -2,41 +2,52 @@
     margin-top: 125px
 
     > .list
-        border-top: 1px solid $wall-white
+        border-top: 0.4px solid $gray
+        color: $light-gray
         margin-top: 30px
         padding-top: 40px
+        margin-bottom: 30px
         position: relative
 
         &:before
             display: block
             content: " "
-            width: 7px
-            height: 7px
-            border: $wall-white 1px solid
+            width: 6px
+            height: 6px
+            border: $gray 1px solid
             position: absolute
             top: -5px
             left: 50%
             margin-left: -5px
-            background: #FFF
-            box-shadow: #FFF 0 0 0 5px
-            border-radius: 3px
+            background: $background
+            box-shadow: $background 0 0 0 4px
+            border-radius: 5px
 
 .tags > .list
     > .item
-        font-weight: 300
+        font-weight: 600
         text-transform: uppercase
         text-align: center
         -webkit-font-smoothing: antialiased
         text-rendering: optimizeLegibility
-        padding: 3px 9px
+        padding: 3px 6px
         border-radius: 3px
         font-size: 1.3rem
-        background: $wall-white
-        color: $light-yellow
+        background: $concrete-gray
+        color: $black
         letter-spacing: 1px
         margin: 0 0.5rem 1rem
         text-decoration: none
         display: inline-block
+        transition: all ease-in-out .2s
+    
+    > .item:hover
+        color: $rice-white
+        background: $medium-dark-gray
+
+.tag-list > .link > .title
+    font: 28px $fontQuickSand
+    font-weight: 700
 
 .tag-list > .list
     padding: 0
@@ -50,7 +61,7 @@
         width: 100%
         height: 100%
         display: block
-        padding: 20px 0
+        padding: 10px 0
         text-decoration: none
 
     > .item > .url > .title
@@ -58,7 +69,7 @@
         width: 75%
         font-weight: 400
         transition: all ease-in-out .2s
-        font-size: 1.6rem
+        font: 18.5px $fontNunito
 
     > .item:hover > .url > .title
         color: $light-blue

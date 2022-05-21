@@ -5,26 +5,29 @@ title: Tags
 <section class="list">
     <h1 class="title">Tags</h1>
 
-    {% assign tags_list = site.tags %}
+    {% assign sorted_tags = site.tags | sort %}
 
-    {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %}
+    {% if sorted_tags.first[0] == null %}
+        {% for tag in sorted_tags %}
             <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
         {% endfor %}
     {% else %}
-        {% for tag in tags_list %}
+        {% for tag in sorted_tags %}
             <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
         {% endfor %}
     {% endif %}
 
-    {% assign tags_list = nil %}
+    {% assign sorted_tags = nil %}
 </section>
 
 <hr>
 
 <section class="tag-list">
-    {% for tag in site.tags  %}
-    <h2 class="title" id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags  %}
+    <a class="link" href="#{{ tag[0] | slugify }}">
+        <h2 class="title" id="{{ tag[0] | slugify }}"># {{ tag[0] }}</h2>
+    </a>
 
     <ul class="list">
         {% assign pages_list = tag[1] %}

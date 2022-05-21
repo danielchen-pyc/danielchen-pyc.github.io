@@ -5,7 +5,7 @@ layout: post
 date: 2021-05-01 22:10
 tag: 
 - ML
-- Javascript
+- JavaScript
 - Python
 - GCP
 - Google API

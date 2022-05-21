@@ -4,7 +4,7 @@ author: daniel
 layout: post
 date: 2020-12-23 22:10
 tag: 
-- javascript
+- JavaScript
 - MongoDB
 - ExpressJS
 - ReactJS

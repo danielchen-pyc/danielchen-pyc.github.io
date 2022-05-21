@@ -6,9 +6,9 @@ date: 2020-04-13 22:10
 tag: 
 - ML
 - CNN
-- python
-- tensorflow
-- aws sagemaker
+- Python
+- TensorFlow
+- AWS SageMaker
 image: /assets/images/project/image-classifier/architecture1.png
 headerImage: true
 projects: true

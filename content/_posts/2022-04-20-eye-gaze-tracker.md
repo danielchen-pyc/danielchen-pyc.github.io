@@ -4,7 +4,7 @@ author: daniel
 layout: post
 date: 2022-04-20 22:10
 tag: 
-- python
+- Python
 - Robotics
 - ML
 - C++

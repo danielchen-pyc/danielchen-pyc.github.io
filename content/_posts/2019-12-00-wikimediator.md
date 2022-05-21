@@ -4,7 +4,7 @@ author: daniel
 layout: post
 date: 2019-12-23 22:10
 tag: 
-- java
+- Java
 image: /assets/images/project/wiki/Untitled-1.png
 headerImage: true
 projects: true
