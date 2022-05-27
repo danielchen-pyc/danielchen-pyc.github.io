@@ -21,7 +21,7 @@ title: Life
                             {% endcase %},
                         {{ note.date | date: "%Y" }}</time></aside>
                 </a>
-                <p>{{ note.content }}</p>
+                <p>{{ note.content | markdownify }}</p>
             </div>
         </li>
     {% endfor %}
