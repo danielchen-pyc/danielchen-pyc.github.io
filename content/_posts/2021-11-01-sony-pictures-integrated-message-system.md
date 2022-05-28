@@ -11,6 +11,7 @@ tag:
 - Google Cloud Service
 - UI/UX
 - CSS
+- Data Analysis
 image: /assets/images/work/sony-pictures/integrated/icon-muscle.png
 headerImage: true
 projects: true
