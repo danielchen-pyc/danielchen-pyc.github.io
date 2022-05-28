@@ -9,8 +9,8 @@ title: Life
     {% for note in site.data.life %}
         <li>
             <div class="item {% if note.star %}star{% endif %}">
-                <a href="#{{ note.date | date:"%Y-%m-%d" }}">
-                    <aside id="{{ note.date | date:"%Y-%m-%d" }}"><time datetime="{{ note.date | date:"%Y/%m/%d" }}">
+                <a href="#{{ note.date | date:"%Y-%m-%d-%H%M" }}">
+                    <aside id="{{ note.date | date:"%Y-%m-%d-%H%M" }}"><time datetime="{{ note.date | date:"%Y/%m/%d %H:%M%P" }}">
                         >&nbsp;&nbsp; {% assign d = note.date | date: "%d" | plus:'0' %}
                         {{ note.date | date: "%B" }} 
                         {% case d %}
@@ -19,7 +19,8 @@ title: Life
                             {% when 3 or 23 %}{{ d }}rd
                             {% else %}{{ d }}th
                             {% endcase %},
-                        {{ note.date | date: "%Y" }}</time></aside>
+                        {{ note.date | date: "%Y" }}&nbsp;
+                        {{ note.date | date: "%H:%M %P" }}</time></aside>
                 </a>
                 <p>{{ note.content | markdownify }}</p>
             </div>
