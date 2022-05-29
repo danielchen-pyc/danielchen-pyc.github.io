@@ -11,6 +11,7 @@ tag:
 - Google API
 - DialogFlow
 - App Script
+- Data Analysis
 image: /assets/images/work/sony-pictures/chatbot/icons.png
 headerImage: true
 projects: true

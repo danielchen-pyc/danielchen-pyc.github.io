@@ -1,5 +1,5 @@
 ---
-title: ":telephone_receiver: Message Queue / Listner Company-Level API Development"
+title: ":telephone_receiver: Message Queue / Listner API for Future Company-Level Notification Development"
 author: daniel
 layout: post
 date: 2021-10-01 22:10

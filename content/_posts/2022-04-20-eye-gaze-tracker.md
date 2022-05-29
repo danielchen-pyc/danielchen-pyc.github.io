@@ -10,6 +10,7 @@ tag:
 - C++
 - Matlab
 - Data Analysis
+- Research
 image: /assets/images/project/eye-gaze/gmr.gif
 headerImage: true
 projects: true
