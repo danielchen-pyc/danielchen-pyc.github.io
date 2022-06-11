@@ -26,7 +26,7 @@ hidden: show
 # Introduction
 
 ## Project Overview
-In the fourth year of my engineering physics degree, we had to take the project development + management course [ENPH 459 Engineering Physics Project II][1], where we tried to complete an open-ended engineering project sponsored by companies in the industry, professors or research labs in 8 months. Aside from the engineering aspect of the project, we were expected to manage the project from start to finish, i.e. define scopes and limitations of the project, propose our solutions to our sponsors, perform rick analysis and weekly reportings, etc. We also had to present our project and ideas professionally and treat it like an investor/stakeholder presentation. At the end of the project, we participated in the project fair, showcased our results and wrote a formal final report. 
+In the fourth year of my engineering physics degree, we had to take the project development + management course [ENPH 459 Engineering Physics Project II][1], where we tried to complete an open-ended engineering project sponsored by companies in the industry, professors or research labs in 8 months. Aside from the engineering aspect of the project, we were expected to manage the project from start to finish, i.e. define scopes and limitations of the project, propose our solutions to our sponsors, perform risk analysis and weekly reportings, etc. We also had to present our project and ideas professionally and treat it like an investor/stakeholder presentation. At the end of the project, we participated in the project fair, showcased our results and wrote a formal final report. 
 
 
 ## Problem Statement
