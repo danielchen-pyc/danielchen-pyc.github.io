@@ -18,6 +18,6 @@ projects: true
 description: "Intiated Company-Wide Gnome Notification System for Future Development and Integrated it with Dispatch and Review Tool Notification Protocols"
 category: sony
 externalLink: false
-hidden: show
+hidden: hide
 ---
 

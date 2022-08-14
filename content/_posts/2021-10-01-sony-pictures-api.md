@@ -12,6 +12,6 @@ projects: true
 description: "Internal Stompy Wrapper API for Future Company Notification Development"
 category: sony
 externalLink: false
-hidden: show
+hidden: hide
 ---
 

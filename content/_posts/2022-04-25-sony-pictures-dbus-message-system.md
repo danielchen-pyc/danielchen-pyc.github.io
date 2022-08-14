@@ -18,6 +18,6 @@ projects: true
 description: "Established Dbus Connection for Python Listener - Javascript Extension Communication"
 category: sony
 externalLink: false
-hidden: show
+hidden: hide
 ---
 
