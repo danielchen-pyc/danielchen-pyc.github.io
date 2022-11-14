@@ -20,3 +20,13 @@ externalLink: false
 hidden: show
 ---
 :warning: Still Under Construction! :warning:
+
+<div class="wrapper-large">
+    <iframe 
+        src="/assets/pdf/ENPH_479_Proposal.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+        frameborder="0"
+        style="width:100%;height:50vh;">
+    </iframe>
+    <figcaption class="caption">Project Proposal</figcaption>
+</div>
+<br/>
