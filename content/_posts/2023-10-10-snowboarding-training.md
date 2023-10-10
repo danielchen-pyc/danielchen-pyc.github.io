@@ -5,7 +5,7 @@ layout: post
 date: 2023-10-10 22:10
 tag: 
 - Snowboard
-image: /assets/images/snowboarding/cypress-1.gif
+image: /assets/images/snowboarding/cypress.gif
 imagewidth: 80%
 headerImage: true
 projects: true
