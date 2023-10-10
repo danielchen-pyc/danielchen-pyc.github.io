@@ -79,6 +79,7 @@ collections:
 projects: true
 blog: true
 lifeUpdate: true
+snobo: true
 
 read-time: true
 show-tags: true
