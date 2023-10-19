@@ -61,6 +61,7 @@ Still Under Construction!
 單板滑雪最注重的就是下半身的協調及力量，而下半身的訓練可以分為臀部、大腿、小腿及腳底板的訓練。
 </body>
 
+<br/>
 
 <h2 id="wall-sit"><bold>靠牆半蹲 (Wall Sit) </bold></h1>
 
@@ -85,6 +86,8 @@ Still Under Construction!
     <figcaption class="caption">靠牆半蹲示意圖 Wall Sit Demonstration (<a href="https://www.inspireusafoundation.org/wall-sit-variations/">source</a>)</figcaption>
 </div>
 
+<br/>
+
 <h2 id="deep-squat"><bold>深蹲 (Deep Squats)</bold></h1>
 
 **深蹲介紹：**
@@ -107,12 +110,13 @@ Still Under Construction!
     <figcaption class="caption">深蹲示意圖 Deep Squat Demonstration (<a href="https://www.inspireusafoundation.org/squat-variations/">source</a>)</figcaption>
 </div>
 
+<br/>
 
 <h2 id="deep-squat-variations"><bold>深蹲變化 (Squat Variations)</bold></h1>
 當你可以連續深蹲至少15次，膝蓋也不會因此而疼痛時（基本上如果膝蓋一直朝外，膝蓋不會受太多力，而多半是大腿跟臀部在發力），就可以做深蹲的變化來訓練腿部的其他肌肉及平衡力。
 
 - 增加重量：用啞鈴、槓片、槓鈴都可以。[這個網站][2]有非常詳細的介紹。
-- 前後左右搖擺：個人非常喜歡的深蹲變化！可以訓練你的平衡力及小腿前後的肌肉協調。
+- 深蹲重心轉移：個人非常喜歡的深蹲變化！可以訓練你的平衡力及小腿前後的肌肉協調。
     - 方法：深蹲到最底部之後，膝蓋ㄧ樣向外展，身體從中心偏離往前後左右搖擺，核心繃緊不駝背，注意腳底板三點貼合地面，利用小腿前後側肌肉控制平衡。
     - 對滑單板的幫助：模擬在雪板上，身體承現中心且靈活姿勢時，控制前後刃的腳底板動作！（英：Great leg and feet exercise for edge engaging of your snowboard when you are in a centre and mobile position!）
 - 深蹲轉體：另外一個可以訓練到旋轉活動度的運動！
