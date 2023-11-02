@@ -202,3 +202,28 @@
         background: $background
         box-shadow: $background 0 0 0 4px
         border-radius: 5px
+
+.separator-child-thicc
+    border-top: 2.3px solid $dark-gray
+    padding-top: 15px
+    padding-bottom: 5px
+    margin: 40px 0 0
+    font-size: 1.3rem
+    color: $light-gray
+    font-weight: 400
+    text-align: center
+    position: relative
+
+    &:before
+        display: block
+        content: " "
+        width: 6px
+        height: 6px
+        border: $dark-gray 2px solid
+        position: absolute
+        top: -5px
+        left: 50%
+        margin-left: -5px
+        background: $background
+        box-shadow: $background 0 0 0 4px
+        border-radius: 5px

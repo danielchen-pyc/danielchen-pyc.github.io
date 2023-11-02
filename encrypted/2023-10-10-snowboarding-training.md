@@ -43,6 +43,8 @@ Still Under Construction!
     - [側邊棒式 (Side Plank)](#side-plank)
 - [結語](#conclusion)
 
+<footer class="separator-child-thicc"></footer>
+
 <br/>
 <h1 id="introduction">大綱</h1>
 
@@ -51,7 +53,8 @@ Still Under Construction!
 當你踏上單板滑雪之旅，**腿力、腰力和平衡力**是你將要發展的三個關鍵元素。這些技能不僅可以提高你的滑雪表現，還可以增加你在山上的自信心。無論你是初學者還是經驗豐富的單板滑雪者，這些訓練都是重要的，它們將有助於提高你的穩定性、控制和適應性，使你能夠應對各種坡道和地形。以下介紹的一系列練習和技巧，都可以讓你的腿部、腰部和平衡能力都得到有效鍛鍊。讓我們一起開始這個滑雪訓練之旅吧！
 </body>
 
-<br/>
+<footer class="separator-child-thicc"></footer>
+
 <h1 id="guide">使用說明</h1>
 
 - 無法正確深蹲，[ 身體會不自主前傾 ](#leaning-forward)或是[ 腳踝抬起 ](#raised-ankle-squating)：從[ 柔軟度 (Flexibility) ](#flexibility)開始
@@ -68,24 +71,50 @@ Still Under Construction!
     </div>
 </div>
 
+<footer class="separator-child-thicc"></footer>
+
 <br/>
 <h1 id="flexibility">柔軟度</h1>
 
 <h2 id="hip-stretches"><bold>臀部拉筋 (Hip Stretches) </bold></h2>
 
+<div class="side-by-side-custom-medium">
+    <div class="toleft">
+        <img class="image" src="/assets/images/snowboarding/seated-piriformis-stretch.gif"/>
+        <figcaption class="caption">坐姿梨狀肌伸展 Seated Piriformis Stretch (<a href="https://www.inspireusafoundation.org/seated-piriformis-stretch/">source</a>)</figcaption>
+    </div>
+    <div class="toright">
+        <img class="image" src="/assets/images/snowboarding/standing-piriformis-stretch.gif"/>
+        <figcaption class="caption">站立梨狀肌伸展 Standing Piriformis Stretch (<a href="https://www.inspireusafoundation.org/seated-piriformis-stretch/">source</a>)</figcaption>
+    </div>
+</div>
+
+<div class="side-by-side-custom-medium">
+    <div class="toleft">
+        <img class="image" src="/assets/images/snowboarding/kneeling-hip-flexor-stretch.gif"/>
+        <figcaption class="caption">弓箭步 Kneeling Hip Flexor Stretch (<a href="https://www.inspireusafoundation.org/seated-piriformis-stretch/">source</a>)</figcaption>
+    </div>
+    <div class="toright">
+        <img class="image" src="/assets/images/snowboarding/lizard-pose-stretch.png"/>
+        <figcaption class="caption">蜥蜴伸展 Lizard Stretch (<a href="https://www.inspireusafoundation.org/lizard-stretch/">source</a>)</figcaption>
+    </div>
+</div>
+
+<br/>
+
 <h2 id="leg-stretches"><bold>腿部拉筋 (Leg Stretches) </bold></h2>
 
 <h2 id="ankle-mobility"><bold>腳踝靈活度 (Ankle Mobility) </bold></h2>
 
-<div class="wrapper-medium">
+<div class="wrapper-large">
     <img class="image" src="/assets/images/snowboarding/ankle-mobility.png"/>
     <figcaption class="caption">踝關節蹠屈及背屈 Plantar Flexion and Dorsiflexion (<a href="https://www.inspireusafoundation.org/bodyweight-exercises-for-calves/">source</a>)</figcaption>
 </div>
 
 <h2 id="knee-mobility"><bold>膝蓋靈活度 (Knee Mobility) </bold></h2>
 
+<footer class="separator-child-thicc"></footer>
 
-<br/>
 <h1 id="bottom">臀腿</h1>
 
 <body>
@@ -120,6 +149,10 @@ Still Under Construction!
 
 <br/>
 
+***
+
+<br/>
+
 <h2 id="deep-squat"><bold>深蹲 (Deep Squats)</bold></h2>
 
 **深蹲介紹：**
@@ -151,6 +184,10 @@ Still Under Construction!
 
 <br/>
 
+***
+
+<br/>
+
 <h2 id="deep-squat-variations"><bold>深蹲變化 (Squat Variations)</bold></h2>
 
 當你可以連續深蹲至少15次，膝蓋也不會因此而疼痛時（基本上如果膝蓋一直朝外，膝蓋不會受太多力，而多半是大腿跟臀部在發力），就可以做深蹲的變化來訓練腿部的其他肌肉及平衡力。
@@ -163,12 +200,18 @@ Still Under Construction!
     - 方法：深蹲到最底部之後，身體試著微微旋轉，膝蓋一邊會下壓、另一邊會上旋，重複動作但切記不要轉太多！會讓膝蓋受太多力。
     - 對滑單板的幫助：模擬在雪板上，身體承現中心且靈活姿勢時，運用膝蓋轉彎的轉體能力！（英：Great rotational mobility exercise using knee steering when you are in a centre and mobile position!）
 
+<br/>
+
+***
+
+<br/>
 
 <h2 id="jump-rope"><bold>跳繩 (Jump Rope) </bold></h2>
 
 跳繩是一個可以增加腳踝活動度及發展腿力的好運動！對滯空能力、彈跳能力都有很大的幫助。如果有跳繩的習慣，關節也會比較健康～滑雪時比較不容易受傷！
 
-<br/>
+<footer class="separator-child-thicc"></footer>
+
 <h1 id="balance">平衡力</h1>
 
 <h2 id="bosu"><bold>雙腳半球平衡訓練 (Bosu Ball Balance)</bold></h2>
@@ -177,8 +220,8 @@ Still Under Construction!
 
 <h2 id="single-leg-bosu"><bold>單腳半球平衡訓練 (Single-Legged Bosu Ball Balance)</bold></h2>
 
+<footer class="separator-child-thicc"></footer>
 
-<br/>
 <h1 id="core">核心</h1>
 
 <h2 id="crunch"><bold>捲腹訓練 (Stomach Crunches)</bold></h2>
