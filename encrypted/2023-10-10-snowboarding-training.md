@@ -111,6 +111,23 @@ Still Under Construction!
     <figcaption class="caption">踝關節蹠屈及背屈 Plantar Flexion and Dorsiflexion (<a href="https://www.inspireusafoundation.org/bodyweight-exercises-for-calves/">source</a>)</figcaption>
 </div>
 
+腳掌跟腳踝是整個身體的基座，直接或間接的影響著每個關節的靈活度、身體體態、運動發力點及運動傷害的形成或防範。擁有堅強、上曲的足弓可以大幅減輕我們膝蓋（甚至是骨盆、脊椎）的受力。滑雪的時候經常需要深蹲或是顛腳，這些都是在一個不穩定的狀況下（滑行、飄移）尋求一個平衡點，如果沒有穩定的足弓來支撐身體的重量，我們其他的部位就需要花更多的力氣去滿足這個缺陷，進而增加運動傷害的風險。以下是幾部個人覺得很有用的腳掌訓練方式及腳踝活動度的影片～
+
+<br/>
+<div class="wrapper-large">
+    <iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/ZcIx7ykJY6U?si=1jead1uCpYY3wC7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption class="caption">足弓塌陷的成因及治療方法</figcaption>
+</div>
+
+<br/>
+<br/>
+
+<div class="wrapper-large">
+    <iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/tdvCzvQiF9Y?si=DgOtDZHGztOt-j0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <figcaption class="caption">增加腳踝活動度的方式</figcaption>
+</div>
+
+
 <h2 id="knee-mobility"><bold>膝蓋靈活度 (Knee Mobility) </bold></h2>
 
 <footer class="separator-child-thicc"></footer>
