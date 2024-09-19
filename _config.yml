@@ -41,12 +41,12 @@ instagram: dandandives
 linkedin: dandandives
 github: danielchen-pyc
 # medium: medium
-email: poyuchen@alumni.ubc.ca
+email: poyuchen@cs.toronto.edu
 
 authors:
   dandandives:
     name: daniel chen
-    bio: i cook (and write some code too)
+    bio: i cook, snowboard, and dive (and write some code too)
     external-image: false
     picture: assets/images/profile.jpg
 
