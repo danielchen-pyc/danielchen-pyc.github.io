@@ -30,3 +30,11 @@ hidden: show
     <figcaption class="caption">Project Proposal</figcaption>
 </div>
 <br/>
+
+<div class="wrapper-large">
+    <iframe 
+        src="/assets/pdf/2255_Final_Report.pdf#toolbar=0&navpanes=0&scrollbar=0" 
+        frameborder="0"
+        style="width:100%;height:75vh;">
+    </iframe>
+</div>
